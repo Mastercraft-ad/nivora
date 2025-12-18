@@ -1,8 +1,9 @@
 import { Link } from "wouter";
-import { Sparkles, Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 import { SiWhatsapp, SiFacebook, SiInstagram } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import logoImage from "@assets/Abstract_logo_for_website_developers_1766098228256.png";
 
 const quickLinks = [
   { href: "/", label: "Home" },
@@ -27,10 +28,8 @@ export function Footer() {
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2" data-testid="link-footer-logo">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-                <Sparkles className="h-5 w-5 text-primary-foreground" />
-              </div>
-              <span className="text-xl font-bold tracking-tight">FreshPress</span>
+              <img src={logoImage} alt="Nivora logo" className="h-9 w-9 object-contain" />
+              <span className="text-xl font-bold tracking-tight">Nivora</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Premium laundry and dry cleaning services with a commitment to quality, 
@@ -82,21 +81,17 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>123 Clean Street, Fresh City, FC 12345</span>
+                <span>No.58 Yadi Street, G9 Estate Dutse, Jigawa State</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-3 text-sm text-muted-foreground">
-                <Mail className="h-4 w-4 shrink-0" />
-                <span>hello@freshpress.com</span>
+                <span>+2348164248021</span>
               </li>
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <Clock className="h-4 w-4 mt-0.5 shrink-0" />
                 <div>
-                  <p>Mon - Fri: 7am - 8pm</p>
-                  <p>Sat - Sun: 8am - 6pm</p>
+                  <p>Mon - Fri: 8am - 5pm</p>
+                  <p>Sat: 9am - 6pm</p>
                 </div>
               </li>
             </ul>
@@ -106,7 +101,7 @@ export function Footer() {
         <div className="mt-12 border-t pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-muted-foreground">
-              2024 FreshPress Laundry. All rights reserved.
+              2024 Nivora Laundry. All rights reserved.
             </p>
             <div className="flex gap-6">
               <Link

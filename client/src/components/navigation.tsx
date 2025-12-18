@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "./theme-toggle";
+import logoImage from "@assets/Abstract_logo_for_website_developers_1766098228256.png";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -19,10 +19,8 @@ export function Navigation() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2" data-testid="link-home-logo">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary">
-            <Sparkles className="h-5 w-5 text-primary-foreground" />
-          </div>
-          <span className="text-xl font-bold tracking-tight">FreshPress</span>
+          <img src={logoImage} alt="Nivora logo" className="h-9 w-9 object-contain" />
+          <span className="text-xl font-bold tracking-tight">Nivora</span>
         </Link>
 
         <div className="hidden items-center gap-1 md:flex">
@@ -40,7 +38,6 @@ export function Navigation() {
         </div>
 
         <div className="flex items-center gap-2">
-          <ThemeToggle />
           <Link href="/booking" className="hidden md:block">
             <Button data-testid="button-book-now-nav">Book Now</Button>
           </Link>

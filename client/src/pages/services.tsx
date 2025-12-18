@@ -14,7 +14,7 @@ const services = [
     title: "Laundry Services",
     description: "Our professional laundry service handles all your everyday clothing needs. We use premium detergents and fabric softeners to ensure your clothes come out fresh, clean, and soft. Each item is carefully sorted by color and fabric type for optimal care.",
     image: laundryImage,
-    price: "From $2.50/lb",
+    price: "From ₦3,500/lb",
     features: [
       "Wash, dry, and fold service",
       "Color and fabric sorting",
@@ -28,7 +28,7 @@ const services = [
     title: "Dry Cleaning",
     description: "Trust us with your most delicate and valuable garments. Our state-of-the-art dry cleaning process is gentle on fabrics while effectively removing dirt and odors. Perfect for suits, formal wear, silk, and other specialty items.",
     image: dryCleaningImage,
-    price: "From $8.99/item",
+    price: "From ₦13,500/item",
     features: [
       "Gentle solvent cleaning process",
       "Expert handling of delicate fabrics",
@@ -42,7 +42,7 @@ const services = [
     title: "Ironing & Pressing",
     description: "Get that crisp, professional look for all your garments. Our skilled team uses professional-grade equipment to deliver perfectly pressed clothes every time. Ideal for business attire, special occasions, or when you want to look your best.",
     image: ironingImage,
-    price: "From $3.99/item",
+    price: "From ₦6,000/item",
     features: [
       "Professional steam pressing",
       "Crisp, wrinkle-free finish",
@@ -56,7 +56,7 @@ const services = [
     title: "Stain Removal",
     description: "Don't give up on stained garments! Our stain removal specialists use advanced techniques and products to tackle even the toughest stains. From wine and coffee to oil and ink, we'll work to restore your clothes to their original condition.",
     image: stainRemovalImage,
-    price: "From $5.99/item",
+    price: "From ₦9,000/item",
     features: [
       "Specialized stain treatment",
       "Wine, coffee, and food stains",
@@ -70,7 +70,7 @@ const services = [
 const addOns = [
   {
     title: "Free Pickup & Delivery",
-    description: "Convenient doorstep service at no extra charge for orders over $30",
+    description: "Convenient doorstep service at no extra charge for orders over ₦45,000",
   },
   {
     title: "Express Same-Day Service",
@@ -187,7 +187,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Book your service now and experience the FreshPress difference. 
+            Book your service now and experience the Nivora difference. 
             First-time customers get 15% off their first order!
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">

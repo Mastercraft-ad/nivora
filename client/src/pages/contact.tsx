@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Send, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import { Phone, MapPin, Clock, MessageCircle, Send, Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { SiWhatsapp } from "react-icons/si";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -43,30 +43,22 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+1 (555) 123-4567",
-    link: "tel:+15551234567",
+    value: "+2348164248021",
+    link: "tel:+2348164248021",
     action: "Call Now",
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    value: "hello@freshpress.com",
-    link: "mailto:hello@freshpress.com",
-    action: "Send Email",
   },
   {
     icon: MapPin,
     title: "Address",
-    value: "123 Clean Street, Fresh City, FC 12345",
+    value: "No.58 Yadi Street, G9 Estate Dutse, Jigawa State",
     link: "https://maps.google.com",
     action: "Get Directions",
   },
 ];
 
 const businessHours = [
-  { day: "Monday - Friday", hours: "7:00 AM - 8:00 PM" },
-  { day: "Saturday", hours: "8:00 AM - 6:00 PM" },
-  { day: "Sunday", hours: "8:00 AM - 6:00 PM" },
+  { day: "Monday - Friday", hours: "8:00 AM - 5:00 PM" },
+  { day: "Saturday", hours: "9:00 AM - 6:00 PM" },
 ];
 
 export default function Contact() {
@@ -334,7 +326,7 @@ export default function Contact() {
                     <p className="font-semibold text-lg">Quick Chat on WhatsApp</p>
                     <p className="text-sm opacity-90">Get instant responses to your questions</p>
                   </div>
-                  <a href="https://wa.me/15551234567" target="_blank" rel="noopener noreferrer">
+                  <a href="https://wa.me/2348164248021" target="_blank" rel="noopener noreferrer">
                     <Button variant="secondary" className="shrink-0" data-testid="button-whatsapp-chat">
                       <MessageCircle className="h-4 w-4 mr-2" />
                       Chat Now
@@ -372,7 +364,7 @@ export default function Contact() {
             Ready to Try Our Services?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Book your first service now and experience the FreshPress difference.
+            Book your first service now and experience the Nivora difference.
           </p>
           <div className="mt-8">
             <Link href="/booking">

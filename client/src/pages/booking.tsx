@@ -29,35 +29,35 @@ const services = [
     id: "laundry",
     title: "Laundry Services",
     description: "Wash, dry, and fold service",
-    price: "From $2.50/lb",
+    price: "From ₦3,500/lb",
     icon: Shirt,
   },
   {
     id: "dry-cleaning",
     title: "Dry Cleaning",
     description: "Expert care for delicate fabrics",
-    price: "From $8.99/item",
+    price: "From ₦13,500/item",
     icon: Sparkles,
   },
   {
     id: "ironing",
     title: "Ironing & Pressing",
     description: "Crisp, wrinkle-free finish",
-    price: "From $3.99/item",
+    price: "From ₦6,000/item",
     icon: Clock,
   },
   {
     id: "stain-removal",
     title: "Stain Removal",
     description: "Specialized stain treatment",
-    price: "From $5.99/item",
+    price: "From ₦9,000/item",
     icon: Shield,
   },
   {
     id: "express",
     title: "Express Same-Day",
     description: "Urgent service available",
-    price: "+$10 service fee",
+    price: "+₦15,000 service fee",
     icon: Zap,
   },
 ];
@@ -219,7 +219,7 @@ export default function Booking() {
               Booking Confirmed!
             </h1>
             <p className="mt-4 text-lg text-muted-foreground">
-              Thank you for choosing FreshPress. We've sent a confirmation email with all the details. 
+              Thank you for choosing Nivora. We've sent a confirmation email with all the details. 
               Our team will contact you shortly to confirm pickup.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -250,7 +250,7 @@ export default function Booking() {
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
             Select your service, choose a convenient time, and we'll take care of the rest. 
-            Free pickup and delivery available for orders over $30.
+            Free pickup and delivery available for orders over ₦45,000.
           </p>
         </div>
       </section>
@@ -509,7 +509,7 @@ export default function Booking() {
                         </div>
                         <div className="flex justify-between">
                           <span className="text-muted-foreground">Pickup</span>
-                          <span>Free (orders over $30)</span>
+                          <span>Free (orders over ₦45,000)</span>
                         </div>
                       </div>
                     </div>

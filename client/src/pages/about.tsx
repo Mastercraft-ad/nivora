@@ -28,8 +28,8 @@ const values = [
 ];
 
 const stats = [
-  { value: "10+", label: "Years in Business" },
-  { value: "5,000+", label: "Happy Customers" },
+  { value: "1+", label: "Years in Business" },
+  { value: "250+", label: "Happy Customers" },
   { value: "50,000+", label: "Items Cleaned" },
   { value: "4.9", label: "Star Rating" },
 ];
@@ -38,7 +38,7 @@ const team = [
   {
     name: "Sarah Johnson",
     role: "Founder & CEO",
-    bio: "With 15 years in the textile industry, Sarah founded FreshPress to bring professional quality care to everyday laundry.",
+    bio: "With 15 years in the textile industry, Sarah founded Nivora to bring professional quality care to everyday laundry.",
   },
   {
     name: "Michael Chen",
@@ -63,7 +63,7 @@ export default function About() {
             <span className="text-foreground">About Us</span>
           </nav>
           <h1 className="text-4xl font-bold tracking-tight md:text-5xl" data-testid="text-about-title">
-            About FreshPress
+            About Nivora
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-3xl">
             Dedicated to providing premium laundry and dry cleaning services with a 
@@ -88,7 +88,7 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2014, FreshPress began with a simple mission: to transform the 
+                  Founded in 2014, Nivora began with a simple mission: to transform the 
                   laundry experience from a chore into a convenience. What started as a 
                   small local service has grown into a trusted name in professional 
                   garment care.
@@ -124,7 +124,7 @@ export default function About() {
               Our Values
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              These core principles guide everything we do at FreshPress.
+              These core principles guide everything we do at Nivora.
             </p>
           </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -186,7 +186,7 @@ export default function About() {
       <section className="py-16 md:py-24 bg-primary text-primary-foreground">
         <div className="mx-auto max-w-7xl px-4 md:px-6 text-center">
           <h2 className="text-3xl font-bold tracking-tight md:text-4xl" data-testid="text-about-cta">
-            Ready to Experience the FreshPress Difference?
+            Ready to Experience the Nivora Difference?
           </h2>
           <p className="mt-4 text-lg opacity-90 max-w-2xl mx-auto">
             Join thousands of satisfied customers who trust us with their garments.

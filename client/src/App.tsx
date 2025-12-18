@@ -29,7 +29,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="light" storageKey="freshpress-theme">
+      <ThemeProvider defaultTheme="dark" storageKey="freshpress-theme">
         <TooltipProvider>
           <div className="flex min-h-screen flex-col">
             <Navigation />

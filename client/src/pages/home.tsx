@@ -46,8 +46,8 @@ const benefits = [
 ];
 
 const stats = [
-  { value: "10+", label: "Years Experience" },
-  { value: "5000+", label: "Happy Customers" },
+  { value: "1+", label: "Years Experience" },
+  { value: "250+", label: "Happy Customers" },
   { value: "24hr", label: "Fast Turnaround" },
   { value: "100%", label: "Satisfaction Rate" },
 ];
@@ -142,7 +142,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl" data-testid="text-why-choose-title">
-              Why Choose FreshPress?
+              Why Choose Nivora?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
               We combine professional expertise with modern convenience to deliver 
@@ -183,7 +183,7 @@ export default function Home() {
           </h2>
           <p className="mt-4 text-lg opacity-90 max-w-2xl mx-auto">
             Book your first service today and discover why thousands of customers 
-            trust FreshPress with their garments.
+            trust Nivora with their garments.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link href="/booking">
@@ -199,7 +199,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mt-6 text-sm opacity-80">
-            Mon - Fri: 7am - 8pm | Sat - Sun: 8am - 6pm
+            Mon - Fri: 8am - 5pm | Sat: 9am - 6pm
           </p>
         </div>
       </section>

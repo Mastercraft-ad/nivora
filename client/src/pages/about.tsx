@@ -36,9 +36,9 @@ const stats = [
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "Moses Pius",
     role: "Founder & CEO",
-    bio: "With 15 years in the textile industry, Sarah founded Nivora to bring professional quality care to everyday laundry.",
+    bio: "With 1+ years in the textile industry, Moses founded Nivora to bring professional quality care to everyday laundry.",
   },
   {
     name: "Michael Chen",
@@ -88,7 +88,7 @@ export default function About() {
               </h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 2014, Nivora began with a simple mission: to transform the 
+                  Founded in 2024, Nivora began with a simple mission: to transform the 
                   laundry experience from a chore into a convenience. What started as a 
                   small local service has grown into a trusted name in professional 
                   garment care.
@@ -163,7 +163,7 @@ export default function About() {
               Meet Our Team
             </h2>
             <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-              The dedicated professionals behind FreshPress.
+              The dedicated professionals behind Nivora.
             </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">

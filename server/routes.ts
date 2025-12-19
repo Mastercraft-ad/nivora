@@ -6,9 +6,8 @@ import { z } from "zod";
 
 export async function registerRoutes(
   httpServer: Server,
-  app: Express
+  app: Express,
 ): Promise<Server> {
-  
   app.post("/api/contacts", async (req, res) => {
     try {
       const validatedData = insertContactSchema.parse(req.body);
@@ -16,7 +15,9 @@ export async function registerRoutes(
       res.status(201).json(contact);
     } catch (error) {
       if (error instanceof z.ZodError) {
-        res.status(400).json({ error: "Validation failed", details: error.errors });
+        res
+          .status(400)
+          .json({ error: "Validation failed", details: error.errors });
       } else {
         res.status(500).json({ error: "Failed to create contact" });
       }
@@ -39,7 +40,9 @@ export async function registerRoutes(
       res.status(201).json(booking);
     } catch (error) {
       if (error instanceof z.ZodError) {
-        res.status(400).json({ error: "Validation failed", details: error.errors });
+        res
+          .status(400)
+          .json({ error: "Validation failed", details: error.errors });
       } else {
         res.status(500).json({ error: "Failed to create booking" });
       }
@@ -91,6 +94,48 @@ export async function registerRoutes(
       res.json(stats);
     } catch (error) {
       res.status(500).json({ error: "Failed to fetch stats" });
+    }
+  });
+
+  // Admin routes
+  const ADMIN_PASSWORD = "nivora2025adminpass";
+
+  app.post("/api/admin/verify", async (req, res) => {
+    try {
+      const { password } = req.body;
+      if (password === ADMIN_PASSWORD) {
+        res.json({ authenticated: true });
+      } else {
+        res.status(401).json({ error: "Invalid password" });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Verification failed" });
+    }
+  });
+
+  app.delete("/api/admin/contacts/:id", async (req, res) => {
+    try {
+      const success = await storage.deleteContact(req.params.id);
+      if (success) {
+        res.json({ success: true });
+      } else {
+        res.status(404).json({ error: "Contact not found" });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Failed to delete contact" });
+    }
+  });
+
+  app.delete("/api/admin/bookings/:id", async (req, res) => {
+    try {
+      const success = await storage.deleteBooking(req.params.id);
+      if (success) {
+        res.json({ success: true });
+      } else {
+        res.status(404).json({ error: "Booking not found" });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Failed to delete booking" });
     }
   });
 

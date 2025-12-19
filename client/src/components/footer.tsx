@@ -81,7 +81,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>No.58 Yadi Street, G9 Estate Dutse, Jigawa State</span>
+                <span>No.58 Yalwawa In Yadi Street, G9 Estate Dutse, Jigawa State</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-muted-foreground">
                 <Phone className="h-4 w-4 shrink-0" />

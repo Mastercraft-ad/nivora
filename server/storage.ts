@@ -16,11 +16,13 @@ export interface IStorage {
   
   createContact(contact: InsertContact): Promise<Contact>;
   getContacts(): Promise<Contact[]>;
+  deleteContact(id: string): Promise<boolean>;
   
   createBooking(booking: InsertBooking): Promise<Booking>;
   getBookings(): Promise<Booking[]>;
   getBookingById(id: string): Promise<Booking | undefined>;
   updateBookingStatus(id: string, status: string): Promise<Booking | undefined>;
+  deleteBooking(id: string): Promise<boolean>;
   
   getBookingStats(): Promise<BookingStats>;
 }
@@ -72,6 +74,10 @@ export class MemStorage implements IStorage {
     );
   }
 
+  async deleteContact(id: string): Promise<boolean> {
+    return this.contacts.delete(id);
+  }
+
   async createBooking(insertBooking: InsertBooking): Promise<Booking> {
     const id = randomUUID();
     const booking: Booking = { 
@@ -103,6 +109,10 @@ export class MemStorage implements IStorage {
       return booking;
     }
     return undefined;
+  }
+
+  async deleteBooking(id: string): Promise<boolean> {
+    return this.bookings.delete(id);
   }
 
   async getBookingStats(): Promise<BookingStats> {

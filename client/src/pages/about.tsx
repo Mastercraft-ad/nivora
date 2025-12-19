@@ -41,12 +41,12 @@ const team = [
     bio: "With 1+ years in the textile industry, Moses founded Nivora to bring professional quality care to everyday laundry.",
   },
   {
-    name: "Michael Chen",
+    name: "Michael Josh",
     role: "Operations Manager",
     bio: "Michael ensures every order is processed efficiently and every customer receives timely, quality service.",
   },
   {
-    name: "Emily Rodriguez",
+    name: "Emily Grace",
     role: "Quality Specialist",
     bio: "Emily leads our quality control team, ensuring every garment meets our exacting standards before delivery.",
   },
@@ -78,7 +78,7 @@ export default function About() {
             <div>
               <img
                 src={teamImage}
-                alt="FreshPress team"
+                alt="Nivora team"
                 className="w-full h-80 md:h-96 object-cover rounded-lg"
               />
             </div>
